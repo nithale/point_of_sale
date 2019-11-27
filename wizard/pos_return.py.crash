@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="Loggerhead/1.18.1 Python/2.6.5 Bazaar/2.5.0.lp.2 Paste/1.7.2 PasteDeploy/1.3.3 SimpleTAL/4.1 Pygments/1.4 simplejson/2.1.3" name="generator" />
+<title>~openerp-dev/openobject-addons/trunk-bug-753835-ara : revision 4634</title>
+<link href="/static/css/global.css" rel="stylesheet" />
+<link href="/static/images/favicon.png" rel="shortcut icon" />
+
+<script type="text/javascript">
+var global_path = '/~openerp-dev/openobject-addons/trunk-bug-753835-ara/';
+var collapsed_icon_path = '/static/images/treeCollapsed.png';
+var expanded_icon_path = '/static/images/treeExpanded.png';
+</script>
+<script src="/static/javascript/yui/build/yui/yui-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/oop/oop-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/event/event-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/attribute/attribute-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/base/base-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/dom/dom-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/node/node-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/anim/anim-min.js" type="text/javascript"></script>
+<script src="/static/javascript/yui/build/io/io-base-min.js" type="text/javascript"></script>
+<script src="/static/javascript/custom.js" type="text/javascript"></script>
+
+<link href="/static/css/diff.css" media="all" type="text/css" rel="stylesheet" />
+<script src="/static/javascript/diff.js" type="text/javascript"></script>
+<script type="text/javascript">
+var link_data = {};
+var specific_path = "point_of_sale/wizard/pos_return.py";
+var path_to_id = {};
+</script>
+
+</head>
+<body class="public">
+
+
+
+<div class="black-link">
+<a href="https://code.launchpad.net/~openerp-dev/openobject-addons/trunk-bug-753835-ara">
+← Back to branch summary
+</a>
+</div>
+
+
+<h1 class="branch-name">
+~openerp-dev/openobject-addons/trunk-bug-753835-ara
+</h1>
+
+<ul id="menuTabs">
+
+<li><a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/changes" title="Changes" id="on">Changes</a></li>
+<li><a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/files" title="Files">Files</a></li>
+
+
+</ul>
+
+<div id="loggerheadCont">
+<div id="search_terms"></div>
+
+<div id="breadcrumbs">
+
+<a href="https://code.launchpad.net/~openerp-dev/openobject-addons/trunk-bug-753835-ara">~openerp-dev/openobject-addons/trunk-bug-753835-ara</a>
+
+
+<span class="breadcrumb">» Revision
+
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/revision/4634" title="View changes to all files">4634</a>
+
+</span>
+<span class="breadcrumb">
+: <a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/view/4634/point_of_sale/wizard/pos_return.py" title="Annotate point_of_sale/wizard/pos_return.py">point_of_sale/wizard/pos_return.py</a>
+</span>
+</div>
+
+
+<p>
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/revision/4634">
+« back to all changes in this revision
+</a>
+</p>
+<p>
+Viewing changes to <a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/view/4634/point_of_sale/wizard/pos_return.py" title="Annotate point_of_sale/wizard/pos_return.py">point_of_sale/wizard/pos_return.py</a>
+</p>
+<ul id="submenuTabs">
+<li id="first"><a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/files/4634" title="browse files at revision 4634">browse files at revision 4634</a></li>
+<li>
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/revision/4634?remember=4634" title="compare with another revision">compare with another revision</a></li>
+
+<li>
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/diff/4634">download diff</a>
+
+</li>
+<li>
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/tarball/4634">download tarball</a>
+</li>
+<li id="last"><a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/changes/4634" title="view history from revision 4634">view history from revision 4634</a></li>
+</ul>
+
+<div class="infoContainer">
+<div id="infTxt">
+<ul>
+<li class="committer">
+<strong>Committer:</strong>
+<span>ARA(OpenERP)</span>
+</li>
+
+<li class="timer">
+<strong>Date:</strong>
+<span>2011-04-08 06:58:41 UTC</span>
+</li>
+
+
+
+<li class="revid">
+<strong>Revision ID:</strong>
+<span>ara@tinyerp.com-20110408065841-3p7buvzp985p7ujo</span>
+</li>
+</ul>
+
+
+<div class="clear"></div>
+<div class="bug">
+<a href="https://launchpad.net/bugs/753835">https://launchpad.net/bugs/753835</a>
+</div>
+<div class="information">[FIX] point of sale: picking is sent to Customers instead of back to Stock</div>
+</div>
+<ul id="list-files">
+
+
+
+
+<ul>
+
+<li class="desc">files modified:</li>
+
+<li class="files">
+<b><a href="#point_of_sale/wizard/pos_return.py">point_of_sale/wizard/pos_return.py</a></b>
+
+
+</li>
+</ul>
+
+</ul>
+<div class="clear"></div>
+</div>
+
+
+<p class="expand show_if_js"><a href="#" id="toggle_unified_sbs">Show diffs side-by-side</a></p>
+<p class="codin"><img src="/static/images/newCode.gif" alt="added" /> added</p>
+<p class="codin"><img src="/static/images/deleteCode.gif" alt="removed" /> removed</p>
+<div class="clear"></div>
+
+<div>
+
+<div class="diff">
+<div class="diffBox">
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/revision/4634/point_of_sale/wizard/pos_return.py" id="point_of_sale/wizard/pos_return.py" title="View changes to point_of_sale/wizard/pos_return.py only" class="the-link">
+<img src="/static/images/treeExpanded.png" class="expand_diff" />
+point_of_sale/wizard/pos_return.py
+</a>
+</div>
+<div style="overflow: hidden">
+<div class="container">
+<div style="display:none" class="loading">
+<img src="/static/images/spinner.gif" />
+</div>
+<div class="diffinfo">
+<div class="pseudotable unified">
+
+<div class="pseudorow context-row">
+<div class="lineNumber first">152</div>
+<div class="lineNumber second">152</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;product_uos_qty&#39;:&nbsp;uom_obj._compute_qty(cr,&nbsp;uid,&nbsp;qty&nbsp;,line.product_id.uom_id.id),</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">153</div>
+<div class="lineNumber second">153</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;picking_id&#39;:&nbsp;new_picking,</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">154</div>
+<div class="lineNumber second">154</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;product_uom&#39;:&nbsp;line.product_id.uom_id.id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow delete-row">
+<div class="lineNumber first">155</div>
+<div class="lineNumber second">&nbsp;</div>
+<div class="code delete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;location_id&#39;:&nbsp;location_id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow insert-row">
+<div class="lineNumber first">&nbsp;</div>
+<div class="lineNumber second">155</div>
+<div class="code insert">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;location_id&#39;:&nbsp;stock_dest_id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">156</div>
+<div class="lineNumber second">156</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;product_id&#39;:&nbsp;line.product_id.id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow delete-row">
+<div class="lineNumber first">157</div>
+<div class="lineNumber second">&nbsp;</div>
+<div class="code delete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;location_dest_id&#39;:&nbsp;stock_dest_id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow insert-row">
+<div class="lineNumber first">&nbsp;</div>
+<div class="lineNumber second">157</div>
+<div class="code insert">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;location_dest_id&#39;:&nbsp;location_id,</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">158</div>
+<div class="lineNumber second">158</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;name&#39;:&nbsp;&#39;%s&nbsp;(return)&#39;&nbsp;%order_id.name,</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">159</div>
+<div class="lineNumber second">159</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;date&#39;:&nbsp;date_cur</div>
+<div class="clear"></div>
+</div><div class="pseudorow context-row">
+<div class="lineNumber first">160</div>
+<div class="lineNumber second">160</div>
+<div class="code context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<ul id="pages">
+
+
+<li class="next">
+<a href="/~openerp-dev/openobject-addons/trunk-bug-753835-ara/revision/4633?start_revid=4634">Older </a>
+</li>
+</ul>
+</div>
+<p id="footer" class="fl">Loggerhead 1.18.1 is a web-based interface for <a href="http://bazaar-vcs.org/">Bazaar</a> branches</p>
+</div>
+</body>
+</html>
