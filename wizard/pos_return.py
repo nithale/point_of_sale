@@ -204,12 +204,18 @@ class pos_return(osv.osv_memory):
                 res = cr.fetchone()
                 location_id = res and res[0] or None
                 stock_dest_id = val.id
-                new_picking = picking_obj.copy(cr, uid, order_id.picking_id.id, {'name':'%s (return)' % order_id.name,
-                                                                               'move_lines': [],
-                                                                               'state':'draft',
-                                                                               'type': 'in',
-                                                                               'address_id': order_id.partner_id.id,
-                                                                               'date': date_cur })
+                new_picking_cols = {
+                    'name':'%s (return)' % order_id.name,
+                    'move_lines': [],
+                    'state':'draft',
+                    'type': 'in',
+                    'date': date_cur,
+                }
+                if order_id.partner_id:
+                    new_picking_cols['address_id'] = order_id.partner_id.address[0].id
+                new_picking = picking_obj.copy(cr, uid,
+                    order_id.picking_id.id, new_picking_cols
+                    )
                 new_order = order_obj.copy(cr, uid, order_id.id, {'name': 'Refund %s'%order_id.name,
                                                               'lines':[],
                                                               'statement_ids':[],

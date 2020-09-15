@@ -428,7 +428,7 @@ class pos_order(osv.osv):
         for order in orders:
             if not order.picking_id:
                 new = True
-                picking_id = picking_obj.create(cr, uid, {
+                picking_id_cols = {
                     'name': pick_name,
                     'origin': order.name,
                     'type': 'out',
@@ -438,7 +438,11 @@ class pos_order(osv.osv):
                     'invoice_state': 'none',
                     'auto_picking': True,
                     'pos_order': order.id,
-                }, context=context)
+                }
+                if order.partner_id:
+                    picking_id_cols['address_id'] = order.partner_id.address[0].id
+                picking_id = picking_obj.create(cr, uid, picking_id_cols,
+                    context=context)
                 self.write(cr, uid, [order.id], {'picking_id': picking_id}, context=context)
             else:
                 picking_id = order.picking_id.id
